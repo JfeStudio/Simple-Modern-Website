@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link css swiperjs -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- link native css  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- set logo -->
+    <link rel="icon" href="assets/images/logo.svg" />
+    <title>Simple Modern Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header id="scroll-navigation">
+        <div class="small-container">
+          <div class="navigation">
+            <div class="logo">
+              <i class="bx bx-cube-alt icons"></i>
+              <span class="text-logo">JfeStudio</span>
+            </div>
+            <nav id="menu-navigation" data-visible="false">
+              <ul class="menu tabs">
+                <li>
+                  <a data-tab-target="#home" class="tab active" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a data-tab-target="#shop" class="tab" href="#">Shop</a>
+                </li>
+                <li>
+                  <a data-tab-target="#explore" class="tab" href="#">Agents</a>
+                </li>
+                <div class="btn-header-mobile">
+                  <div class="btn-search">
+                    <i class="bx bx-search icons"></i>
+                  </div>
+                  <div class="btn-checkout">
+                    <i class="bx bx-cart-alt icons"></i>
+                  </div>
+                  <div class="toggle-darkmode"></div>
+                </div>
+              </ul>
+            </nav>
+            <div class="btn-header">
+              <div class="btn-search"><i class="bx bx-search icons"></i></div>
+              <div class="btn-checkout">
+                <i class="bx bx-cart-alt icons"></i>
+              </div>
+              <div class="toggle-darkmode"></div>
+            </div>
+            <div
+              class="menu-toggle"
+              aria-controls="menu-navigation"
+              aria-expanded="false"
+            ></div>
+          </div>
+        </div>
+      </header>
+      <main class="tab-content">
+        <!-- content / homepage -->
+        <div id="home" class="content homepage active" data-tab-content>
+          <div class="small-container">
+            <div class="rows-content">
+              <div class="cols-content">
+                <h1>Classic With Natural Twist.</h1>
+                <p>Find your classic style now!</p>
+                <div class="images-app">
+                  <div class="cols-app">
+                    <img src="assets/images/app-store.png" alt="" />
+                  </div>
+                  <div class="cols-app">
+                    <img src="assets/images/play-store.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="cols-content">
+                <div class="swiper-content">
+                  <div class="swiper chev-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          class="hero-images"
+                          src="assets/images/lg-images-hero-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="hero-images"
+                          src="assets/images/lg-images-hero-2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="hero-images"
+                          src="assets/images/lg-images-hero-3.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="btn-swiper">
+                      <div class="button-prev">
+                        <span class="left-arrow"> &#8592;</span>
+                      </div>
+                      <div class="button-next">
+                        <span class="right-arrow">&#8594;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <img class="hero-images" src="assets/images/bg-hero.png" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content / shopping -->
+        <div id="shop" class="content shopping" data-tab-content>
+          <div class="small-container">
+            <div class="rows-content">
+              <div class="cols-content">
+                <div class="preview-images">
+                  <img
+                    class="preview-sm-images"
+                    src="assets/images/preview-sm-1.png"
+                    alt="model"
+                    onclick="imagesBox(this)"
+                  />
+                  <img
+                    class="preview-sm-images"
+                    src="assets/images/preview-sm-2.png"
+                    alt="model"
+                    onclick="imagesBox(this)"
+                  />
+                  <img
+                    class="preview-sm-images"
+                    src="assets/images/preview-sm-3.png"
+                    alt="model"
+                    onclick="imagesBox(this)"
+                  />
+                  <span class="vertical-lr">Gallery</span>
+                </div>
+              </div>
+              <div class="cols-content">
+                <div class="preview-full-images">
+                  <img
+                    class="big-images"
+                    src="assets/images/preview-sm-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="cols-content">
+                <div class="info-shopping">
+                  <h1 class="title-shopping">HOODED FAUX SUEDE</h1>
+                  <p class="tipe">Jackets</p>
+                  <p class="text-shopping">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam dolore magni facilis aut atque repellendus rerum
+                    consequatur.
+                  </p>
+                  <div class="info-quantity">
+                    <div class="quantity">
+                      <h3 class="heading-md-quantity">Quantity</h3>
+                      <div class="quantity-total">
+                        <span class="plus">-</span>
+                        <span class="interger-count">1</span>
+                        <span class="minus">+</span>
+                      </div>
+                    </div>
+                    <div class="change-design">
+                      <h3 class="heading-md-quantity">Change Design</h3>
+                      <i class="bx bxs-wrench icons"></i>
+                    </div>
+                  </div>
+                  <div class="btn-cart">Add To Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content / explore -->
+        <div id="explore" class="content explore" data-tab-content>
+          <div class="small-container">
+            <h1 class="title-explore">Agenst you can trust</h1>
+            <p class="text-explore">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            </p>
+            <div class="rows-content">
+              <div class="cols-content">
+                <div class="card">
+                  <div class="card-images">
+                    <img src="assets/images/user-1.jpg" alt="" />
+                    <div class="card-name">
+                      <h1>Jonathan BBC</h1>
+                      <p>Product Designer</p>
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <p>Lorem ipsum dolor sit amet consectetur elit?</p>
+                    <div class="mycontact">
+                      <h4>Contact Me</h4>
+                      <span class="arrow-right"> &#8594;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cols-content">
+                <div class="card">
+                  <div class="card-images">
+                    <img src="assets/images/user-2.png" alt="" />
+                    <div class="card-name">
+                      <h1>Natalia Manabon</h1>
+                      <p>UI/UX Design</p>
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <p>Lorem ipsum dolor sit amet consectetur elit?</p>
+                    <div class="mycontact">
+                      <h4>Contact Me</h4>
+                      <span class="arrow-right"> &#8594;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cols-content">
+                <div class="card">
+                  <div class="card-images">
+                    <img src="assets/images/user-3.png" alt="" />
+                    <div class="card-name">
+                      <h1>John VTG</h1>
+                      <p>Logo Design</p>
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <p>Lorem ipsum dolor sit amet consectetur elit?</p>
+                    <div class="mycontact">
+                      <h4>Contact Me</h4>
+                      <span class="arrow-right"> &#8594;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- link js swiperjs -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- link vanilla js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
